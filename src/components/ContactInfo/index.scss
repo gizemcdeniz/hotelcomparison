@@ -1,0 +1,30 @@
+@import "../../style/variables";
+@import "../../style/headings";
+@import "../../style/bootstrapImports";
+
+.contactInfo {
+  h2 {
+    @include mainHeading;
+    margin-bottom: 1rem;
+    color: #3d3c3c;
+    font-style: italic;
+  }
+
+  .contactMethods {
+    padding-top: 1rem;
+  }
+
+  .contactIcon {
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .contactInfo {
+    h2 {
+      text-align: center !important;
+    }
+  }
+}

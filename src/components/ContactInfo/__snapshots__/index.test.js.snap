@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactInfo renders correctly and matches the snapshot 1`] = `
+<div
+  className="contactInfo col"
+>
+  <h2>
+    contactUs.contactUsInfo.header
+  </h2>
+  <p>
+    contactUs.contactUsInfo.description
+  </p>
+  <div
+    className="contactMethods row"
+  >
+    <div
+      className="col"
+    >
+      <img
+        alt="Location icon"
+        className="contactIcon"
+        src="locationIcon.svg"
+      />
+      <p>
+        contactUs.contactUsInfo.location
+      </p>
+    </div>
+    <div
+      className="col"
+    >
+      <img
+        alt="Phone icon"
+        className="contactIcon"
+        src="phoneIcon.svg"
+      />
+      <p>
+        contactUs.contactUsInfo.phone
+      </p>
+    </div>
+    <div
+      className="col"
+    >
+      <img
+        alt="Contact icon"
+        className="contactIcon"
+        src="mailIcon.svg"
+      />
+      <p>
+        contactUs.contactUsInfo.email
+      </p>
+    </div>
+  </div>
+</div>
+`;

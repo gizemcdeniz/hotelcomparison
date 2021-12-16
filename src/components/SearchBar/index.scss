@@ -1,0 +1,25 @@
+@import "../../style/variables";
+@import "../../style/forms";
+
+.searchBarInput {
+  @include inputElement(
+    $bgColor: $primaryColor,
+    $placeholderColor: $primaryColor
+  );
+  height: 2.4rem;
+  background-color: rgba(254, 143, 124, 0.3);
+}
+
+.searchIcon {
+  position: absolute;
+  right: 1rem;
+  top: 20%;
+  right: 2rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  z-index: 3;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

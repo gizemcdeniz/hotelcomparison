@@ -1,0 +1,25 @@
+@import "../../../style/variables";
+@import "../../../style/buttons";
+@import "../../../style/forms";
+@import "../../../style/bootstrapImports";
+
+.userPasswordSection {
+  font: inherit;
+  width: 100%;
+
+  .formInput,
+  label {
+    width: 100%;
+  }
+
+  input[type="password"] {
+    @include inputElement($bgColor: #fff);
+    display: inline-block;
+    border-color: #d1dbe3;
+    height: 2.6rem;
+  }
+
+  input.inputError {
+    @include inputErrorBorder;
+  }
+}

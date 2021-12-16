@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="signInSection container-md"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="signInImg col-md-6 col-12"
+    >
+      <img
+        alt="Women Group Hugging Together"
+        src="womenGroupHuggingTogether.png"
+      />
+    </div>
+    <div
+      className="signInForm col-md-6 col-12"
+    >
+      <h2>
+        signIn.header
+      </h2>
+      <div>
+        <span
+          className="hyphen"
+        />
+        <h4>
+          signIn.signInWith
+        </h4>
+      </div>
+      <ul
+        className="signInIcons"
+      >
+        <li
+          className="signInIcon"
+        >
+          <a
+            href="#/"
+            onClick={[Function]}
+          >
+            <img
+              alt="Twitter icon"
+              src="twitterIcon.svg"
+            />
+          </a>
+        </li>
+        <li
+          className="signInIcon"
+        >
+          <a
+            href="#/"
+            onClick={[Function]}
+          >
+            <img
+              alt="Facebook icon"
+              src="facebookIcon.svg"
+            />
+          </a>
+        </li>
+        <li
+          className="signInIcon"
+        >
+          <a
+            href="#/"
+            onClick={[Function]}
+          >
+            <img
+              alt="Google icon"
+              src="googleIcon.svg"
+            />
+          </a>
+        </li>
+      </ul>
+      <p
+        className="text-center"
+      >
+        <hr
+          className="divider"
+        />
+        <span
+          className="dividerContent"
+        >
+          signIn.or
+        </span>
+      </p>
+      <div
+        className="signInForm"
+      >
+        <form
+          onSubmit={[Function]}
+        >
+          <div
+            className="formInput"
+          >
+            <input
+              aria-label="email"
+              name="email"
+              placeholder="signIn.form.yourEmail"
+              type="email"
+            />
+          </div>
+          <div
+            className="formInput"
+          >
+            <input
+              aria-label="password"
+              name="password"
+              placeholder="signIn.form.yourPassword"
+              type="password"
+            />
+          </div>
+          <div
+            className="formInput"
+          >
+            <div
+              className="rememberMe"
+            >
+              <div>
+                <input
+                  id="remembered"
+                  name="remembered"
+                  type="checkbox"
+                  value="toBeRemembered"
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="remembered"
+                >
+                  signIn.form.rememberMe
+                </label>
+              </div>
+            </div>
+          </div>
+          <button
+            className="submitBtn"
+            type="submit"
+          >
+            signIn.form.signIn
+          </button>
+        </form>
+      </div>
+      <p>
+        signIn.newHere
+         
+        <a
+          aria-current={null}
+          href="/signup"
+          onClick={[Function]}
+        >
+          signIn.createAccount
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+`;

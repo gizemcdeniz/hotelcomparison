@@ -1,0 +1,197 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="signUpSection container-md"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="signUpImg col-md-6 col-12"
+    >
+      <img
+        alt="Two women support each other"
+        src="womenSupportEachOther.png"
+      />
+    </div>
+    <div
+      className="signUpForm col-md-6 col-12"
+    >
+      <h2>
+        signUp.header
+      </h2>
+      <div>
+        <span
+          className="hyphen"
+        />
+        <h4>
+          signUp.signUpWith
+        </h4>
+      </div>
+      <ul
+        className="signUpIcons"
+      >
+        <li
+          className="signUpIcon"
+        >
+          <a
+            href="#/"
+            onClick={[Function]}
+          >
+            <img
+              alt="Twitter icon"
+              src="twitterIcon.svg"
+            />
+          </a>
+        </li>
+        <li
+          className="signUpIcon"
+        >
+          <a
+            href="#/"
+            onClick={[Function]}
+          >
+            <img
+              alt="Facebook icon"
+              src="facebookIcon.svg"
+            />
+          </a>
+        </li>
+        <li
+          className="signUpIcon"
+        >
+          <a
+            href="#/"
+            onClick={[Function]}
+          >
+            <img
+              alt="Google icon"
+              src="googleIcon.svg"
+            />
+          </a>
+        </li>
+      </ul>
+      <p
+        className="text-center"
+      >
+        <hr
+          className="divider"
+        />
+        <span
+          className="dividerContent"
+        >
+          signUp.or
+        </span>
+      </p>
+      <div
+        className="signUpForm"
+      >
+        <form
+          onSubmit={[Function]}
+        >
+          <div
+            className="formInputGroup"
+          >
+            <div
+              className="formInput"
+            >
+              <input
+                aria-label="firstName"
+                name="firstName"
+                placeholder="signUp.firstName"
+                type="text"
+              />
+            </div>
+            <div
+              className="formInput"
+            >
+              <input
+                aria-label="lastName"
+                name="lastName"
+                placeholder="signUp.lastName"
+                type="text"
+              />
+            </div>
+          </div>
+          <div
+            className="formInput"
+          >
+            <input
+              aria-label="email"
+              name="email"
+              placeholder="signUp.emailAddress"
+              type="email"
+            />
+          </div>
+          <div
+            className="formInputGroup"
+          >
+            <div
+              className="formInput"
+            >
+              <input
+                aria-label="password"
+                name="password"
+                placeholder="signUp.password"
+                type="password"
+              />
+            </div>
+            <div
+              className="formInput"
+            >
+              <input
+                aria-label="confirmPassword"
+                name="confirmPassword"
+                placeholder="signUp.confirmPassword"
+                type="password"
+              />
+            </div>
+          </div>
+          <div
+            className="formInput"
+          >
+            <div
+              className="termsConditions"
+            >
+              <div>
+                <input
+                  aria-label="acceptTerms"
+                  id="acceptTerms"
+                  name="acceptTerms"
+                  type="checkbox"
+                  value="accepted"
+                />
+              </div>
+              <div>
+                <label
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "signUp.acceptTerms",
+                    }
+                  }
+                  htmlFor="acceptTerms"
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            aria-label="sign up"
+            className="submitBtn"
+            type="submit"
+          >
+            signUp.signUp
+          </button>
+          <p
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "signUp.haveAccount",
+              }
+            }
+          />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+`;

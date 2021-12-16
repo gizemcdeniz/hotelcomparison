@@ -1,0 +1,53 @@
+@import "../../style/variables";
+@import "../../style/buttons";
+@import "../../style/forms";
+@import "../../style/bootstrapImports";
+
+.contactForm {
+  font: inherit;
+
+  /* Inputs Style */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    @include inputElement;
+  }
+
+  textarea {
+    height: 8rem;
+  }
+
+  input.inputError,
+  textarea.inputError {
+    @include inputErrorBorder;
+  }
+
+  button.submitBtn {
+    @include primaryBtn;
+    background-color: $successColor;
+    font-weight: 800;
+
+    &:hover {
+      background-color: $lightColor;
+      color: $primaryColor;
+    }
+  }
+
+  .formInput {
+    margin-bottom: 1.4rem;
+    position: relative;
+
+    label {
+      width: 100%;
+      font-weight: 500;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .contactForm {
+    button.submitBtn {
+      width: 100%;
+    }
+  }
+}

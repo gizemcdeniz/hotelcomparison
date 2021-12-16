@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactForm renders correctly and matches the snapshot 1`] = `
+<div
+  className="contactForm container-fluid"
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="formInput"
+    >
+      <label
+        htmlFor="fullName"
+      >
+        contactUs.contactUsForm.name.label
+        <input
+          aria-label="Full Name"
+          id="fullName"
+          name="fullName"
+          placeholder="contactUs.contactUsForm.name.placeholder"
+          type="text"
+        />
+      </label>
+    </div>
+    <div
+      className="formInput"
+    >
+      <label
+        htmlFor="email"
+      >
+        contactUs.contactUsForm.email.label
+        <input
+          aria-label="Email address"
+          id="email"
+          name="email"
+          placeholder="contactUs.contactUsForm.email.placeholder"
+          type="email"
+        />
+      </label>
+    </div>
+    <div
+      className="formInput"
+    >
+      <label
+        htmlFor="messageContent"
+      >
+        contactUs.contactUsForm.message.label
+        <textarea
+          aria-label="message"
+          id="messageContent"
+          name="messageContent"
+          placeholder="contactUs.contactUsForm.message.placeholder"
+        />
+      </label>
+    </div>
+    <button
+      className="submitBtn"
+      type="submit"
+    >
+      contactUs.contactUsForm.submitBtn
+    </button>
+  </form>
+</div>
+`;

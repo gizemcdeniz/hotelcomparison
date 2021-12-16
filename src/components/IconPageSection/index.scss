@@ -1,0 +1,80 @@
+
+@import "../../style/variables";
+
+.logoIntro {
+  // background-color: #f5dfd6;
+  // background-image: linear-gradient(#ffbe76, #f6f3ff);
+  background-color: #F8F6F6;
+  font-family: $mainFontFamily;
+
+
+
+  // .violenceTest {
+  //   display: flex;
+  //   // justify-content: space-between;
+  //   // align-items: baseline;
+  //   // align-content: baseline;
+  //   // flex-wrap: wrap;
+  // }
+
+  // .row {
+  //   margin-top: 0 !important;
+  // }
+
+  span {
+    font-family: $secondaryFontFamily;
+    font-weight: 100;
+    font-size: 20px;
+    color:  #FF5964;
+  }
+
+  .easySearch {
+    width: 10em;
+    height: 10em;
+    border-radius: 7em;
+  }
+
+  h3 {
+    color: $primaryColor;
+    padding-top: 0.8rem;
+  }
+
+  p,
+  h6 {
+    color: $lightColor;
+    text-align: justify;
+  }
+
+  h6 {
+    font-size: 1.1rem;
+  }
+
+  button {
+    width: 8rem;
+    height: 2rem;
+    color: $lightColor;
+    background-color: $primaryColor;
+    border: none;
+
+    &:hover {
+      background-color: $lightColor;
+      color: $primaryColor;
+    }
+  }
+
+  img {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+.durationHours {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 576px) {
+  /*ipad phone*/
+  .logoIntro {
+    display: none;
+  }
+}

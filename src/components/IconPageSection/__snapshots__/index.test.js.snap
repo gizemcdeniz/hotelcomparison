@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly and matches the snapshot 1`] = `
+<div
+  className="logoIntro"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="justify-content-md-center row"
+    >
+      <div
+        className="col-lg-6 col-md-12"
+      >
+        <img
+          alt="A woman trapped by fear"
+          src="trappedWomen.png"
+        />
+      </div>
+      <div
+        className="col-lg-6 col-md-12"
+      >
+        <div
+          className="row"
+        >
+          <div
+            className="col"
+          >
+            <img
+              alt="A man not allowing woman to speak"
+              src="dontSpeak.png"
+            />
+          </div>
+          <div
+            className="col"
+          >
+            <img
+              alt="A women saying stop to violence"
+              src="womenStopViolence.png"
+            />
+          </div>
+        </div>
+        <div
+          className="row"
+        >
+          <div
+            className="col"
+          >
+            <h3>
+              home.genderlogoIntro.header
+            </h3>
+            <p>
+              home.genderlogoIntro.intro
+            </p>
+            <div
+              className="violenceTest"
+            >
+              <h6>
+                home.genderlogoIntro.subHeader
+              </h6>
+              <a
+                href="/test"
+                onClick={[Function]}
+              >
+                <button
+                  className="btn btn-primary"
+                  disabled={false}
+                  type="button"
+                >
+                  home.genderlogoIntro.button
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

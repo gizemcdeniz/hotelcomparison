@@ -1,0 +1,64 @@
+
+@import "../../style/variables";
+@import "../../style/bootstrapImports";
+
+.mainFooter {
+  background-color: #badf9c;
+  padding: 2rem 0;
+  font-family: $mainFontFamily;
+
+  .row {
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .logo {
+    width: 200px;
+  }
+
+  .footerInfo {
+    color: $lightColor;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    align-items: flex-end;
+    padding: 0rem;
+
+    a:hover {
+      color: $primaryColor;
+      cursor: pointer;
+    }
+
+    img {
+      width: 1.5rem;
+      margin: 0 1.3rem;
+    }
+
+    img:hover {
+      background-color: $primaryColor;
+      padding: 0.1rem;
+      border-radius: 0.2rem;
+    }
+  }
+
+  a {
+    color: $lightColor;
+  }
+}
+
+  .logo-text {
+    color: #fff;
+  }
+
+@include media-breakpoint-down(sm) {
+  .mainFooter {
+    .row {
+      text-align: center;
+    }
+
+    .footerInfo {
+      align-items: center;
+      margin-top: 1rem;
+    }
+  }
+}

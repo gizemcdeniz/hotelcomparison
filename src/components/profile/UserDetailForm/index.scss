@@ -1,0 +1,37 @@
+@import "../../../style/variables";
+@import "../../../style/buttons";
+@import "../../../style/forms";
+@import "../../../style/bootstrapImports";
+
+.userDetailSection {
+  font: inherit;
+  width: 100%;
+
+  /* Inputs Style */
+  input,
+  select {
+    @include inputElement($bgColor: #fff);
+    border-color: #d1dbe3;
+    height: 2.6rem;
+  }
+
+  .formInput {
+    @include inputContainer;
+  }
+
+  .formInputGroup {
+    @include inputsGroup;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .userDetailSection {
+    .formInputGroup {
+      display: block;
+
+      .formInput {
+        width: 100%;
+      }
+    }
+  }
+}

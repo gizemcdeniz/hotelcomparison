@@ -1,0 +1,35 @@
+@import "../../style/variables";
+@import "../../style/buttons";
+@import "../../style/bootstrapImports";
+
+.contactSection {
+  background-color: $warningColor;
+  color: $darkColor;
+  font-family: $mainFontFamily;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 22px;
+  width: 100%;
+
+  .contactContainer {
+    padding: 3rem 0;
+  }
+}
+
+.contactFormModalBody {
+  padding: 3rem;
+  p {
+    text-align: center;
+    color: $darkColor;
+    font-family: $mainFontFamily;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .contactSection {
+    .contactContainer {
+      padding-top: 3rem;
+    }
+  }
+}

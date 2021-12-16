@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly and matches the snapshot 1`] = `
+<footer
+  className="mainFooter"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col"
+      >
+        <img
+          alt="Logo"
+          className="logo"
+          src="logoFooter.png"
+        />
+      </div>
+      <div
+        className="footerInfo col-md-3"
+      >
+        <h5>
+          footer.followUs
+        </h5>
+        <div
+          className="row"
+        >
+          <a
+            href="https://www.twitter.com/"
+          >
+            <img
+              alt="Twitter icon"
+              src="twitterIcon.svg"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/"
+          >
+            <img
+              alt="LinkedIn icon"
+              src="linkedInIcon.svg"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/"
+          >
+            <img
+              alt="Instagram icon"
+              src="instagramIcon.svg"
+            />
+          </a>
+          <a
+            href="https://www.facebook.com/"
+          >
+            <img
+              alt="Facebook icon"
+              src="facebookIcon.svg"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+`;

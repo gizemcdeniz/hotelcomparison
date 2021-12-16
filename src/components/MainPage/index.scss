@@ -1,0 +1,85 @@
+@import "../../style/variables";
+@import "../../style/buttons";
+@import "../../style/bootstrapImports";
+
+.main-container {
+  // background-color: $lightColor;
+  background-image: url("vacation.jpg");
+  height: 100%;
+  height: 50em;
+  background-repeat: no-repeat;
+  // background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("icon.png");
+  background-size: 130em 100em;
+  // background-color: rgb(57, 57, 57);
+  justify-content: center;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+  border-radius: 2rem;
+  padding-top: 1rem;
+  padding-left: 25rem;
+  
+  
+
+  .main-text {
+    align-self: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: $primaryColor;
+
+    p {
+      margin-top: 1.4rem;
+    }
+
+    span {
+      font-family: $secondaryFontFamily;
+      font-weight: 800;
+      text-transform: capitalize;
+    }
+
+    button {
+      @include primaryBtn;
+      margin-top: 1.4rem;
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 3.2rem;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .main-container {
+    .main-text {
+      margin-top: 1rem;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .main-container {
+    .main-text {
+      button {
+        width: 100%;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  /*ipad phone*/
+  .travelIamge {
+    display: none;
+  }
+  .main-container {
+    margin-bottom: 1em;
+  }
+}

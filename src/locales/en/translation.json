@@ -1,0 +1,186 @@
+{
+  "navbar": {
+    "headers": {
+      "header0": "About",
+      "header1": "All Tours",
+      "header2": "Contact",
+      "signIn" : "SignIn",
+      "signUp" : "SignUp"
+    },
+  
+    
+    "languages": {
+      "lang0": "Turkish",
+      "lang1": "English"
+    }
+  },
+  "distance": {
+    "title": "Show Distance"
+  },
+  "home": {
+    "buttons" : "Check All Tours"
+  },
+  "available": {
+    "title0": "First Available Time",
+    "title1": "Last Available Time",
+    "button0": "Plan Your Moment",
+    "button1": "From Now"
+  },
+  "footer": {
+    "followUs": "Follow Us",
+      "header0": "HOME",
+      "header1": "COUPONS",
+      "header2": "BLOG",
+    "summary": "It's on us is a platform in which donors can donate food coupons to people in need from the chosen restaurants.",
+    "location": "Istanbul/Turkey",
+    "rights": "All rights reserved"
+  },
+ 
+  "chatBotMessages": {
+    "headerTitle": "Find me available tour",
+    "goToSeekHelpPageText": "Redirecting to search help page",
+    "goToOpportunitiesPageText": "Redirecting to Just Now Customer Service page",
+    "goToBlogPageText": "Redirecting to blog page",
+    "welcomeMessage": "Hello! How can we help you?",
+    "helpLabel": "Find me available tour",
+    "findLabel": "Find tours / experience",
+    "blogLabel": "Check our tours",
+    "opportunityLabel": "Check tour opportunities",
+    "immediateHelpMessage": "Please call {{link}} to get immediate help"
+  },
+  "tourPage": {
+    "headers": {
+      "title0": "Tours",
+      "title1": "Check our all tours",
+      "texSection2": "Millions of people give to charity on a regular basis to support causes they believe in, as well as for the positive effect it has on their own lives..",
+      "button": "Donate"
+    }
+  },
+  "tour": {
+    "header": "Tours"
+  },
+  "signIn": {
+    "header": "Welcome Back!",
+    "signInWith": "Sign in with",
+    "newHere": "New here?",
+    "createAccount": "Create an account",
+    "form": {
+      "yourEmail": "Your email",
+      "yourPassword": "Your password",
+      "rememberMe": "Remember me next time",
+      "signIn": "Sign in"
+    },
+    "or": "Or"
+  },
+  "signUp": {
+    "header": "Welcome to Just Now",
+    "signUpWith": "Sign up with",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "emailAddress": "Your email",
+    "password": "Password",
+    "confirmPassword": "Repeat password",
+    "signUp":"Sign up",
+    "acceptTerms": "I have read and agree with the {{terms}} and our {{privacy}}",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "haveAccount": "Already have an account? {{signIn}}",
+    "signIn": "Sign in",
+    "or": "Or"
+  },
+  "contactUs": {
+    "contactUsForm": {
+      "name": {
+        "label": "Full Name",
+        "placeholder": "Please enter your name (optional)"
+      },
+      "email": {
+        "label": "Email Address",
+        "placeholder": "Please enter your email",
+        "error": {
+          "required": "Your email address is required"
+        }
+      },
+      "message": {
+        "label": "Message",
+        "placeholder": "Please enter your message",
+        "error": {
+          "required": "Your message is required",
+          "minLeght": "Your message is too short. Please write us more",
+          "maxLength": "Your message is too long. Please shorten your message"
+        }
+      },
+      "submitBtn": "Send"
+    },
+    "contactUsPage": {
+      "header": "Contact Us",
+      "subHeader": "If you have any questions, please don't hesitate to talk to us"
+    },
+    "contactUsModal": {
+      "message": "Thank you for leaving us message!"
+    },
+    "contactUsInfo": {
+      "header": "Would you like to be informed about special hotel deals? Subscribe to our newsletter!",
+      "description": " Please use this form to contact us, share your feedback, submit a request for assistance or find best custom tour 7/24.",
+      "location": "Saray Mahallesi Site Yolu Caddesi No: 4/1 34770 Ümraniye/İstanbul",
+      "phone": "0216 554 37 00 | 444 28 22 (Çağrı Merkezi)",
+      "email": "support@seturn.com"
+    }
+  },
+  "aboutUsPage": {
+    "header": "Nobody knows you better than us!",
+    "bodyText": "We enable transit passengers, individual and corporate travelers to make reservations and plan unplanned travel days all-in-one through a single application according to their current location. by finding real last-minute tours and events to use their time more efficiently and providing transportation options with distance information."
+  },
+  "ourSponsorsComp": {
+    "card": {
+      "title0": "Our Sponsors"
+    }
+  },
+  
+  "login": {
+    "loginTitle": {
+      "loginTitle0": "Login",
+      "loginTitle1": "Email",
+      "loginTitle2": "Password",
+      "loginTitle3": "Remember Me",
+      "logintTitle4": "Forgot Your Password?",
+      "loginSuccessMessage": "You succesfully logged in.",
+      "loginErrorMessage": "Check your email and password"
+    }
+  },
+  "register": {
+    "registerTitle": {
+      "registerTitle0": "Register",
+      "registerTitle1": "Email",
+      "registerTitle2": "Password",
+      "registerTitle3": "I Accept Terms and Conditions",
+      "registerTitle4": "Name of Organization",
+      "registerSuccessMessage": "You successfully signed up ",
+      "registerErrorMessage": "Please register with another email address."
+    }
+  },
+  "forgotEmail": {
+    "forgotEmailtitle": {
+      "forgotEmailTitle0": "Reset Your Password",
+      "forgotEmailTitle1": "Email",
+      "forgotEmailSuccess": "Please check your email",
+      "forgotEmailError": "Please re-type your email.",
+      "forgotEmailError2": "Please type your email."
+    }
+  },
+  "spin": "Loading...",
+  "checkoutDrawer": {
+    "pay": "Pay",
+    "nameErr": "Please input your full name!",
+    "emailErr": "Please input your email!",
+    "creditLabel": "Credit Card Details",
+    "emailLabel": "Email",
+    "nameLabel": "Full Name",
+    "success": "Coupons were bought successfully! Thank you for your donation!"
+  },
+  "logout": {
+    "text": "Do you want to log out?",
+    "ok": "OK",
+    "cancel": "Cancel"
+  }
+}

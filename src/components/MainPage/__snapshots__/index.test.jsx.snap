@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly and matches the snapshot 1`] = `
+<div
+  className="main-container container-md"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="main-text col-md-6 col-12 order-md-first order-last"
+    >
+      <div>
+        <h1>
+          home.genderViolenceMain.notAloneStatement
+        </h1>
+        <h1
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "home.genderViolenceMain.safePlaceStatement",
+            }
+          }
+        />
+      </div>
+      <p>
+        home.genderViolenceMain.subHeader
+      </p>
+      <a
+        href="/seekhelp"
+        onClick={[Function]}
+      >
+        <button
+          type="button"
+        >
+          home.genderViolenceMain.button
+        </button>
+      </a>
+    </div>
+    <div
+      className="col-md-6 col-12 order-md-last order-first"
+    >
+      <img
+        alt="Stop Gender Violence"
+        src="stop-gender-violence.svg"
+      />
+    </div>
+  </div>
+</div>
+`;

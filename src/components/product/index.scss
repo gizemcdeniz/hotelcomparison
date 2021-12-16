@@ -1,0 +1,75 @@
+.products {
+    width: auto;
+    height: auto;
+    border-radius: 1em;
+    text-align: center;
+}
+
+.durationDistance {
+    border: 1px solid red;
+}
+
+.carouselHeaderAndImage {
+    display: flex;
+    flex-direction: row;
+}
+
+.carouselHeaderAndImage h4 {
+    font-size: 1em;
+}
+
+.carouselHeaderAndImage p {
+    font-size: 1em;
+}
+
+.durationSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1.5em;
+}
+
+#cartImage {
+    width: 10em;
+}
+
+.imgTitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product {
+    width: auto;
+    height: auto;
+    border-radius: 1em;
+    border: 1px solid red;
+    margin-bottom: 2em;
+}
+
+
+.priceSection {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.totalCost {
+    border: 1px solid rgb(252, 160, 40);
+    width: 10em;
+    box-shadow: 5px 10px #888888;
+
+}
+
+.accordionSection {
+    position: fixed;
+    width: 20em;
+
+}
+
+.priceSection {
+    font-weight: 10em;
+    font-size: 1.5em;
+}

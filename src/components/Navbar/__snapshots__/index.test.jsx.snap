@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly and matches the snapshot 1`] = `
+<nav
+  className="mainNavbar navbar navbar-expand-lg navbar-light"
+>
+  <div
+    className="container"
+  >
+    <a
+      className="navbar-brand"
+      href="/"
+    >
+      <img
+        alt="logo"
+        src="Logo.svg"
+      />
+    </a>
+    <button
+      aria-controls="responsive-navbar-nav"
+      aria-label="Toggle navigation"
+      className="navbar-toggler collapsed"
+      onClick={[Function]}
+      type="button"
+    >
+      <span
+        className="navbar-toggler-icon"
+      />
+    </button>
+    <div
+      aria-expanded={null}
+      className="navbar-collapse collapse"
+      id="responsive-navbar-nav"
+    >
+      <div
+        className="navbar-nav"
+        onKeyDown={[Function]}
+      >
+        <a
+          aria-current={null}
+          className="navLink"
+          href="/about"
+          onClick={[Function]}
+        >
+          navbar.about
+        </a>
+        <a
+          aria-current={null}
+          className="navLink"
+          href="/blog"
+          onClick={[Function]}
+        >
+          navbar.blog
+        </a>
+        <a
+          aria-current={null}
+          className="navLink"
+          href="/opportunities"
+          onClick={[Function]}
+        >
+          navbar.opportunities
+        </a>
+        <a
+          aria-current={null}
+          className="navLink"
+          href="/contact"
+          onClick={[Function]}
+        >
+          navbar.contact
+        </a>
+        <div
+          className="dropdown dropdown"
+          onKeyDown={[Function]}
+        >
+          <button
+            aria-expanded={false}
+            aria-haspopup={true}
+            className="dropdown-toggle btn btn-none"
+            disabled={false}
+            id="dropdown-button"
+            onClick={[Function]}
+            type="button"
+          >
+            <img
+              alt="Language icon"
+              src="language.svg"
+            />
+          </button>
+        </div>
+        <div
+          className="signButtons"
+        >
+          <a
+            aria-current={null}
+            href="/signin"
+            onClick={[Function]}
+          >
+            <button
+              className="signInBtn"
+              type="button"
+            >
+              navbar.buttons.signIn
+            </button>
+          </a>
+          <a
+            aria-current={null}
+            href="/signup"
+            onClick={[Function]}
+          >
+            <button
+              className="signUpBtn"
+              type="button"
+            >
+              navbar.buttons.signUp
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+`;

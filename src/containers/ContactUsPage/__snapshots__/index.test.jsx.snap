@@ -1,0 +1,145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly and matches the snapshot 1`] = `
+<div
+  className="contactUsPage container"
+>
+  <h2>
+    contactUs.contactUsPage.header
+  </h2>
+  <h6>
+    contactUs.contactUsPage.subHeader
+  </h6>
+  <section
+    className="contactSection"
+  >
+    <div
+      className="contactContainer container"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col-md-6 col-sm-12"
+        >
+          <div
+            className="contactInfo col"
+          >
+            <h2>
+              contactUs.contactUsInfo.header
+            </h2>
+            <p>
+              contactUs.contactUsInfo.description
+            </p>
+            <div
+              className="contactMethods row"
+            >
+              <div
+                className="col"
+              >
+                <img
+                  alt="Location icon"
+                  className="contactIcon"
+                  src="locationIcon.svg"
+                />
+                <p>
+                  contactUs.contactUsInfo.location
+                </p>
+              </div>
+              <div
+                className="col"
+              >
+                <img
+                  alt="Phone icon"
+                  className="contactIcon"
+                  src="phoneIcon.svg"
+                />
+                <p>
+                  contactUs.contactUsInfo.phone
+                </p>
+              </div>
+              <div
+                className="col"
+              >
+                <img
+                  alt="Contact icon"
+                  className="contactIcon"
+                  src="mailIcon.svg"
+                />
+                <p>
+                  contactUs.contactUsInfo.email
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="col"
+        >
+          <div
+            className="contactForm container-fluid"
+          >
+            <form
+              onSubmit={[Function]}
+            >
+              <div
+                className="formInput"
+              >
+                <label
+                  htmlFor="fullName"
+                >
+                  contactUs.contactUsForm.name.label
+                  <input
+                    aria-label="Full Name"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="contactUs.contactUsForm.name.placeholder"
+                    type="text"
+                  />
+                </label>
+              </div>
+              <div
+                className="formInput"
+              >
+                <label
+                  htmlFor="email"
+                >
+                  contactUs.contactUsForm.email.label
+                  <input
+                    aria-label="Email address"
+                    id="email"
+                    name="email"
+                    placeholder="contactUs.contactUsForm.email.placeholder"
+                    type="email"
+                  />
+                </label>
+              </div>
+              <div
+                className="formInput"
+              >
+                <label
+                  htmlFor="messageContent"
+                >
+                  contactUs.contactUsForm.message.label
+                  <textarea
+                    aria-label="message"
+                    id="messageContent"
+                    name="messageContent"
+                    placeholder="contactUs.contactUsForm.message.placeholder"
+                  />
+                </label>
+              </div>
+              <button
+                className="submitBtn"
+                type="submit"
+              >
+                contactUs.contactUsForm.submitBtn
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
