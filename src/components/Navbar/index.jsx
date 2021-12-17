@@ -11,7 +11,7 @@ import logo from "../../images/logo1.png";
 import { useTranslation } from "react-i18next";
 import languageIcon from "../../images/icons/language.svg";
 import { AuthContext } from "../../auth/Authentication";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import SignInUpButtons from "./SignInUpButtons";
 
 
@@ -35,7 +35,7 @@ const MainNavbar = () => {
     <Navbar expand="lg" collapseOnSelect className="mainNavbar">
       <Container>
         <Navbar.Brand href="/">
-          <img className="logoSeturn" src={logo} alt="logo" />
+          <h4>Anasayfa</h4>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

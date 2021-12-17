@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react';
 
 function MainHotelPage() {
   const [data, setData] = useState([]);
+  const [isLoading, setLoading] = useState(true);
+
 
   // + adding the use
   useEffect(() => {
@@ -19,13 +21,11 @@ function MainHotelPage() {
   }, []);
 
   return <>
-   <Container style={{ padding:'5em'
-   }} fluid="md">
+   <Container style={{ padding:'4em'}} fluid="md">
      <h1>Populer Oteller</h1>
-     <Row style={{ justifyContent:'space-between'
-   }}>
+     <Row style={{ justifyContent:'space-between'}}>
    {Object.values(data).map(item => (
-  <CardGroup style={{ width: '15rem', height: '40rem'}}>
+  <CardGroup style={{ marginBottom:"2em", width: '20rem', height: '35em', boxShadow: "0 0 10px gray"}}>
   <Card>
     <Card.Img variant="top" src={item.image_url} />
     <Card.Body>
@@ -34,7 +34,7 @@ function MainHotelPage() {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-    <Button variant="success">En İyi Fiyat: {item[0].price} €</Button>{' '}
+    <Button variant="success">Oteli İncele</Button>{' '}
     </Card.Footer>
   </Card>
   </CardGroup>

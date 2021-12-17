@@ -52,6 +52,8 @@ function Search() {
       compare1: compareHotel1,
       compare2: compareHotel2,
     }})
+    console.log(compareHotel1)
+    console.log(compareHotel2)
   }
 
   return (
