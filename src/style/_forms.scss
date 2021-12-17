@@ -5,13 +5,13 @@
 ) {
   display: block;
   width: 100%;
-  height: 2rem;
+  height: 3rem;
   border-radius: $borderRadius;
   background-color: $bgColor;
   color: $darkColor;
   outline: none;
-  border: solid 0.12rem $bgColor;
-  border-color: $bgColor;
+  border: 2px solid #E63946;
+  // border-color: $bgColor;
   padding: 0.4rem 1rem;
   margin-top: 0.25rem;
   margin-bottom: 0;

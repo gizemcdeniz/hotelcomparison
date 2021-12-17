@@ -13,7 +13,7 @@
     flex-direction: column;
     align-items: center;
     padding: 1em;
-    width: 80em;
+    width: 100%;
     border-radius: 5%;
     display: flex;
     border-radius: 15px;
@@ -128,13 +128,19 @@ input {
   .main-container .main-text button {
     background-color: #ee3342;
     color: #fffefc;
-    min-height: 2.6rem;
+    // min-height: 2.6rem;
     border: 0;
     border-radius: 4px;
     outline: none;
-    width: 10em;
+    width: 100%;
+    max-width: 180px;
     padding-top: 1em;
     padding-bottom: 1em;
+    margin-top: 0;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .orClass {

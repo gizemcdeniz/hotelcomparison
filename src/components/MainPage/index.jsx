@@ -11,7 +11,7 @@ const MainPage = () => {
       <Row>
         <Col
           className="main-text"
-          md={{ span: 6, order: "first" }}
+          md={{ span: 12, order: "first" }}
           xs={{ span: 12, order: "last" }}
         >
           <div>
