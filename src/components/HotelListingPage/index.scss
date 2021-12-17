@@ -2,6 +2,49 @@
     height: 12em;
 }
 
+.search-card {
+    border: none;
+}
+
+.search-card-body {
+    box-shadow: 0 0 20px #C4C2C2;
+    border-radius: 20px;
+}
+
+.best-price-title {
+    text-align: center;
+}
+
+.best-price-text {
+    background-color: #fff;
+    width: 100%;
+    max-width: 154px;
+    color: #000;
+    padding: 0.7rem;
+    text-align: center;
+    border-radius: 13px;
+    border: 1px solid #457B9D;
+    font-size: 15px;
+    margin: .7rem auto;
+}
+
+.best-price-card-body {
+    text-align: center;
+}
+
+.points {
+    background-color: #457B9D;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    margin-right: 1rem;
+}
+
+.card-img-left {
+    box-shadow: 0 0 6px #cccecc;
+}
+
 #bigCard {
     border:1px solid red;
     width: 100%;

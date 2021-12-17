@@ -33,7 +33,7 @@
   }
 
   .navLink {
-    color: black;
+    color: #fff;
     font-weight: bold;
     margin: 0 0.5rem;
 
@@ -137,7 +137,7 @@
 
     &:hover,
     &:active {
-      color: $primaryColor;
+      color: #457B9D;
       background-color: $lightColor;
       border-color: $lightColor;
     }
@@ -150,9 +150,11 @@
     width: 8rem;
     height: 2rem;
     margin-left: 0.5rem;
+    background-color: #fff;
+    color: #ee3342;
 
     &:hover {
-      color: $primaryColor;
+      color: #457B9D;
       background-color: $lightColor;
       border-color: $lightColor;
     }

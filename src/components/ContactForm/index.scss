@@ -24,7 +24,7 @@
 
   button.submitBtn {
     @include primaryBtn;
-    background-color: $successColor;
+    background-color: #457B9D;
     font-weight: 800;
 
     &:hover {
