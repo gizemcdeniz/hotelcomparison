@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Button, Container, CardGroup, Row, Col} from "react-bootstrap";
+import { Card, Button, Container, CardGroup, Row, Col, ListGroup} from "react-bootstrap";
 import { useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import "./index.scss";
@@ -39,7 +39,7 @@ const HotelListingPage = () => {
   }, []);
 
 
-  
+
 
   return <>
 {loading ? (
@@ -50,18 +50,11 @@ const HotelListingPage = () => {
             />
           ) : 
 <Container fluid="md">
-  <h1 style={{ margin:"2em 0" }} >Arama Sonuçlarınız</h1>
-
-
-
-
-
-
-
-
-
+  <h1 style={{ margin:"2em 0"}} >Arama Sonuçlarınız</h1>
   {Object.values(data).map(item => (
+    
   <Card style={{ marginBottom:"2em", }} > 
+  
   {/* <Card.Header style={{ fontWeight:"bold", fontSize:"30px", backgroundColor:"#C7CEDB", color:"black"}}>{item.name[0]}</Card.Header> */}
   <Card.Body  style={{ display: "flex", justifyContent:"space-between" }}>
   <Row >
@@ -71,8 +64,9 @@ const HotelListingPage = () => {
     </Row>
     <Row style={{ display:"flex", justifyContent:"space-between"}}>
   {Object.values(item['detail']).map(items => (
+    
     items['best'] ? 
-    (<Card className="bestPriceSection" style={{ width: "40em", height:"18em", backgroundColor:"#EDF7F6", marginBottom:"2em", display:'flex', justifyContent:"space-evenly" }}>
+    (<Card className="bestPriceSection" style={{ width: "40em", height:"18em", backgroundColor:"white", marginBottom:"2em", display:'flex', justifyContent:"space-evenly" }}>
        {items['repeat'] ? (<Card.Header  as="h5"><Card.Title style={{color:"black",fontWeight:"bold", fontSize:"30px" }}> Daha once ilgilendiniz   </Card.Title></Card.Header>) : ''}
        <Card.Header  as="h5"><Card.Title style={{color:"black",fontWeight:"bold", fontSize:"30px" }}> {item.name[0]}   <Card.Img style={{ width: '70px', height: '80px', borderRadius:'50%' }} variant="left" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStU_bjuwqndQdmCGwSWEVHi5JPGZ3-C3Zd5XdITR8vq_ajnV_mfMrHHOrqfYtQOt9Lcn0&usqp=CAU" /></Card.Title></Card.Header>
     <Row>
@@ -83,17 +77,17 @@ const HotelListingPage = () => {
       <Card.Title style={{ fontSize: "15px"}} > En İyi Fiyat: {items['total_price']} </Card.Title>  
       <Card.Title style={{ fontSize: "15px"}} > Puan: {items['rate']} </Card.Title> 
       </Card.Text>
+
       <Col >
       <a rel="noopener noreferrer" href={items['url']} target="_blank">
-      <Button style={{ backgroundColor: "#E63946", width: '30%', height: 'auto'}} onClick={handleClick} variant="success">Oda Seç</Button>
+      <Button style={{ backgroundColor: "green", width: '30%', height: 'auto'}} onClick={handleClick} variant="success">Oda Seç</Button>
       </a>
       </Col>
     </Card.Body>
     </Row>
   </Card> ):
-    (<Card className="secondPriceSection" style={{ width: "20em", marginLeft:"2em"}}>
+    (<Card className="secondPriceSection" style={{ width: "30em", marginLeft:"2em"}}>
    <Card.Header style={{ backgroundColor:"#EDF7F6"}} as="h5">
-
     <Card.Title  style={{ color:"white", color:"black"}}>{items['provider']}</Card.Title>  
   </Card.Header>
   <Card.Body>
@@ -104,6 +98,7 @@ const HotelListingPage = () => {
             <Button  variant="success">Oda Seç</Button>
     </a>
   </Card.Body>
+ 
   </Card>)
   ))}
 </Row>
