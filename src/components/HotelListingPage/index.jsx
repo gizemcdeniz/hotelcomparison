@@ -68,7 +68,7 @@ const HotelListingPage = () => {
     items['best'] ? 
     (<Card className="bestPriceSection" style={{ width: "40em", height:"18em", backgroundColor:"white", marginBottom:"2em", display:'flex', justifyContent:"space-evenly" }}>
        {items['repeat'] ? (<Card.Header  as="h5"><Card.Title style={{color:"black",fontWeight:"bold", fontSize:"30px" }}> Daha once ilgilendiniz   </Card.Title></Card.Header>) : ''}
-       <Card.Header  as="h5"><Card.Title style={{color:"black",fontWeight:"bold", fontSize:"30px" }}> {item.name[0]}   <Card.Img style={{ width: '70px', height: '80px', borderRadius:'50%' }} variant="left" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStU_bjuwqndQdmCGwSWEVHi5JPGZ3-C3Zd5XdITR8vq_ajnV_mfMrHHOrqfYtQOt9Lcn0&usqp=CAU" /></Card.Title></Card.Header>
+       <Card.Header  as="h5"><Card.Title style={{color:"black",fontWeight:"bold", fontSize:"30px" }}> { (Array.isArray(item.name) && item.name.length) ? item.name[1] : item.name }   <Card.Img style={{ width: '70px', height: '80px', borderRadius:'50%' }} variant="left" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStU_bjuwqndQdmCGwSWEVHi5JPGZ3-C3Zd5XdITR8vq_ajnV_mfMrHHOrqfYtQOt9Lcn0&usqp=CAU" /></Card.Title></Card.Header>
     <Row>
     <Card.Body  >
       <Card.Text >
