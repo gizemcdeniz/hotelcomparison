@@ -62,7 +62,7 @@ const HotelListingPage = () => {
               <Card.Body className='search-card-body' style={{ display: "flex", justifyContent: "space-evenly" }}>
                 
                   <Col sm={3}>
-                    <Card.Img style={{ width: "350px", height: "80%", borderRadius: "10px" }} variant="left" src={item.image_url} />
+                    <Card.Img style={{ width: "350px", height: "40%", borderRadius: "10px" ,margin: "22px"}} variant="left" src={item.image_url} />
                   </Col>
                   
                     <Card.Body style={{ marginBottom: "2em" }}>
@@ -71,8 +71,8 @@ const HotelListingPage = () => {
                       {Object.values(item['detail']).map(items => (
                         <div className="bigTable">
                           <div className='providerSection'>
-                        <h5 className='tittleofProvider'>{item.name[0]}</h5>
-                        <h6 className='tittleofProvider'>{item.city[0]}</h6>
+                        <h5 className='tittleofProvider'>{(Array.isArray(item.name) && item.name.length) ?item.name[0]: item.name}</h5>
+                        <h6 className='tittleofProvider'>{(Array.isArray(item.city) && item.city.length) ?item.city[0]: item.city}</h6>
                         
                         <p>
                           <span className='points'> {items['rate']}</span>
@@ -82,18 +82,18 @@ const HotelListingPage = () => {
                         </div>
                         <div className='priceSectionForProvider'>
                       
-                                    <Card.Title style={{ fontSize: "100%", fontSize:"18px", color: 'rgb(10, 10, 87)'}} >{items['provider'] == 'bookingcom' ? <img className='providerLogo' src="https://www.haberodak.com/wp-content/uploads/2020/10/screen-shot-2017-10-24-at-9-54-22-am.png" alt="booking.comL Logo"/> 
-                                    : <img  className='providerLogo' src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Hotels.com_logo.svg/1280px-Hotels.com_logo.svg.png" alt="hotelscomlogo"/>
-                                    
-                                    } 
-                                    
-                                    {items['repeat']} </Card.Title>
+                        <Card.Title style={{ fontSize: "100%", fontSize:"18px", color: 'rgb(10, 10, 87)'}} >{items['provider'] == 'bookingcom' ? <img className='providerLogo' src="https://www.haberodak.com/wp-content/uploads/2020/10/screen-shot-2017-10-24-at-9-54-22-am.png" alt="booking.com Logo"/> 
+                                    : ''} </Card.Title>
+                                    <Card.Title style={{ fontSize: "100%", fontSize:"18px", color: 'rgb(10, 10, 87)'}} >{items['provider'] == 'hotelscom' ? <img className='providerLogo' src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Hotels.com_logo.svg/1280px-Hotels.com_logo.svg.png" alt="hotels.com Logo"/> 
+                                    : ''}    </Card.Title>                                 
+                                    <Card.Title style={{ fontSize: "100%", fontSize:"18px", color: 'rgb(10, 10, 87)'}} >{items['provider'] == 'setur' ? <img className='providerLogo' src="http://www.alanyatatil.net/wp-content/uploads/2009/07/setur.jpg" alt="setur Logo"/> 
+                                    : ''} </Card.Title>
                                     {/* <Card.Title className='best-price-text'> {items['provider']}{items['repeat']} : {items['total_price']} </Card.Title> */}
                                     <a rel="noopener noreferrer" href={items['url']} target="_blank">
                                    
                                     {items['best'] ? 
-                                    <Button style={{ width:"100%"}} className='best-price-provider' onClick={handleClick} variant="success"> Best Price {items['provider']} : {items['total_price']} €  </Button>  : 
-                                    <Button style={{ width:"100%"}} className='best-price-text' onClick={handleClick} variant="success">  {items['provider']} :  {items['total_price']} € </Button>
+                                    <Button style={{ width:"100%"}} className='best-price-provider' onClick={handleClick} variant="success"> Best Price: {items['total_price']} €  </Button>  : 
+                                    <Button style={{ width:"100%"}} className='best-price-text' onClick={handleClick} variant="success"> {items['total_price']} € </Button>
                                 
                                   }
 
