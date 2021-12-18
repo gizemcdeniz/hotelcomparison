@@ -35,16 +35,16 @@ const MainNavbar = () => {
     <Navbar expand="lg" collapseOnSelect className="mainNavbar">
       <Container>
         <Navbar.Brand href="/">
-          <h4>Anasayfa</h4>
+          <button className="anasayfaButton">Anasayfa</button>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav>
             <NavLink className="navLink" to="/about">
               {t("navbar.headers.header0")}
-            </NavLink>         
+            </NavLink>
             <NavLink className="navLink" to="/contact">
-             {t("navbar.headers.header2")}
+              {t("navbar.headers.header2")}
             </NavLink>
             <DropdownButton
               alignRight
@@ -68,8 +68,7 @@ const MainNavbar = () => {
                 );
               })}
             </DropdownButton>
-            {/* <li><Link to="/cart"><ShoppingCartOutlined /></Link></li> */}
-             <SignInUpButtons />
+            <SignInUpButtons />
           </Nav>
         </Navbar.Collapse>
       </Container>

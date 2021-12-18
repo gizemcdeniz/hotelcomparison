@@ -73,7 +73,7 @@ const ChatBotMessages = () => {
       component: (
         <BotRedirectMessage
           message={t("chatBotMessages.goToSeekHelpPageText")}
-          path="/seekhelp"
+          path="/listingHotels"
         />
       ),
       asMessage: true,
@@ -84,7 +84,7 @@ const ChatBotMessages = () => {
       component: (
         <BotRedirectMessage
           message={t("chatBotMessages.goToBlogPageText")}
-          path="/blog"
+          path="/listingHotels"
         />
       ),
       asMessage: true,

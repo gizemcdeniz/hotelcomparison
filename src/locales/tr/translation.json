@@ -5,7 +5,8 @@
       "header1": "Bütün Turlar",
       "header2": "İletişim",
       "signIn" : "Giriş Yap",
-      "signUp" : "Kayıt Ol"
+      "signUp" : "Kayıt Ol",
+      "homePage": "Anasayfa"
     },
     
     "languages": {
@@ -13,18 +14,9 @@
       "lang1": "İngilizce"
     }
   },
-  "distance": {
-    "title": "Mesafeyi Göster"
-  },
   
   "home": {
-    "buttons" : "Turlarmızı Kontrol Edin"
-  },
-  "available": {
-    "title": "En uygun ilk saat",
-    "title1": "En uygun son saat",
-    "button0": "Anını Planla",
-    "button1": "Şu andan itibaren"
+    "buttons" : "Otellerimizi Kontrol Edin"
   },
   "footer": {
       "followUs": "Bizi Takip Edin",
@@ -37,26 +29,26 @@
 
   "chatBotMessages": {
     "headerTitle": "Bana uygun tur bulun",
-    "goToSeekHelpPageText": "Just Now Müşteri temsilcisine yönlendiriyoruz",
+    "goToSeekHelpPageText": "Seturn Müşteri temsilcisine yönlendiriyoruz",
     "goToOpportunitiesPageText": "Redirecting to jobs / training opportunities page",
     "goToBlogPageText": "Tur Sayfasına Yönlendiriyorsunuz",
     "welcomeMessage": "Merhaba! Nasıl yardımcı olabilirim?",
-    "helpLabel": "En uygun turu bulun",
-    "findLabel": "Uygun turu / etkinliği bulun",
-    "blogLabel": "Tur sayfamıza bakın",
-    "opportunityLabel": "Tur fırsatlarımızı bulun",
+    "helpLabel": "Hotel karşılaştırma ile destek istiyorum",
+    "findLabel": "Hotel karşılaştırma ile destek istiyorum",
+    "blogLabel": "Hotel karşılaştırma ile destek istiyorum",
+    "opportunityLabel": "Hotel karşılaştırma ile destek istiyorum",
     "immediateHelpMessage": "Please call {{link}} to get immediate help"
   },
   "tourPage": {
     "headers": {
-      "title0": "Turlar!",
-      "title1": "Size uygun turları sizin için sıraladık",
+      "title0": "Oteller!",
+      "title1": "Size uygun otelleri sizin için sıraladık",
       "texSection2": "Millions of people give to charity on a regular basis to support causes they believe in, as well as for the positive effect it has on their own lives..",
       "button": "Donate"
     }
   },
   "tour": {
-    "header": "Turlar"
+    "header": "Oteller"
   },
   "contactUs": {
     "contactUsForm": {
@@ -98,8 +90,8 @@
     }
   },
   "aboutUsPage": {
-    "header": "Sizi bizden daha iyi tanıyan olamaz!",
-    "bodyText": "Transit yolcuların, bireysel ve kurumsal yolcuların rezervasyon yapmalarını ve plansız seyahat günlerini hepsi bir arada tek bir uygulama üzerinden mevcut konumlarına göre planlamalarını sağlıyoruz. Zamanlarını daha verimli kullanmak için gerçek son dakika turları ve etkinlikleri bularak ve mesafe bilgileri ile ulaşım seçenekleri sunarak."
+    "header": "Size daha iyi fiyatı bizden başka kimse sunamaz!",
+    "bodyText": "Güvenilir birçok farklı online rezervasyon sitesi tarafından sunulan konaklama yeri fiyatlarına ve tekliflerine yönelik bir otel karşılaştırma motorudur."
   },
   "ourSponsorsComp": {
     "card": {
@@ -120,7 +112,7 @@
     "or": "Ya da"
   },
   "signUp": {
-    "header": "Just Now'a Hoşgeldiniz",
+    "header": "Seturn'a Hoşgeldiniz",
     "signUpWith": "Kayıt ol",
     "firstName": "İsmin",
     "lastName": "Soyismin",

@@ -13,41 +13,41 @@ const Review = (bookingId) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-  async function getReviewData() {
-      if(bookingId.booking) {
-    const response = await fetch("https://seturn-api.herokuapp.com/api/hotel-review/"+ bookingId.booking);
-    const data2 = await response.json();
-    console.log(data2);
-    setReview(data2);
-    setLoading(false)
+    async function getReviewData() {
+      if (bookingId.booking) {
+        const response = await fetch("https://seturn-api.herokuapp.com/api/hotel-review/" + bookingId.booking);
+        const data2 = await response.json();
+        console.log(data2);
+        setReview(data2);
+        setLoading(false)
       }
-  }
-  getReviewData()
-},[])
+    }
+    getReviewData()
+  }, [])
 
   return <>
 
     {loading ? (
-      <div> 
-      <Spinner
-        style={{ marginBottom: '27', justifyContent:'space-evenly' }}
-        animation="border"
-        variant="danger"
-        size="xl"
-      />
+      <div>
+        <Spinner
+          style={{ marginBottom: '27', justifyContent: 'space-evenly' }}
+          animation="border"
+          variant="danger"
+          size="xl"
+        />
       </div>
     ) :
       <Container fluid="md">
-          {Object.values(review['review']).map(item => (
-              <div>
-                    <h6><b>Misafir: </b>{item['author']}</h6>
-                                <ul type="square">
-                                <li><b>Avantajları: </b>{item['pros']}</li>
-                                <li><b>Dezavantajları: </b> {item['cons']}</li>
-                                <li><b>Ortalama Puan: </b>{item['average_score']}</li>
-                                </ul>
-              </div>
-          ))}
+        {Object.values(review['review']).map(item => (
+          <div>
+            <h6><b>Misafir: </b>{item['author']}</h6>
+            <ul type="square">
+              <li><b>Avantajları: </b>{item['pros']}</li>
+              <li><b>Dezavantajları: </b> {item['cons']}</li>
+              <li><b>Ortalama Puan: </b>{item['average_score']}</li>
+            </ul>
+          </div>
+        ))}
       </Container>
     }
   </>

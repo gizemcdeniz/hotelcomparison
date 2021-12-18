@@ -5,7 +5,8 @@
       "header1": "All Tours",
       "header2": "Contact",
       "signIn" : "SignIn",
-      "signUp" : "SignUp"
+      "signUp" : "SignUp",
+      "homePage": "Home"
     },
   
     
@@ -14,17 +15,8 @@
       "lang1": "English"
     }
   },
-  "distance": {
-    "title": "Show Distance"
-  },
   "home": {
-    "buttons" : "Check All Tours"
-  },
-  "available": {
-    "title0": "First Available Time",
-    "title1": "Last Available Time",
-    "button0": "Plan Your Moment",
-    "button1": "From Now"
+    "buttons" : "Check All Hotels"
   },
   "footer": {
     "followUs": "Follow Us",
@@ -37,27 +29,27 @@
   },
  
   "chatBotMessages": {
-    "headerTitle": "Find me available tour",
+    "headerTitle": "Please help me for compare hotel",
     "goToSeekHelpPageText": "Redirecting to search help page",
-    "goToOpportunitiesPageText": "Redirecting to Just Now Customer Service page",
+    "goToOpportunitiesPageText": "Redirecting to Seturn Customer Service page",
     "goToBlogPageText": "Redirecting to blog page",
     "welcomeMessage": "Hello! How can we help you?",
-    "helpLabel": "Find me available tour",
-    "findLabel": "Find tours / experience",
-    "blogLabel": "Check our tours",
+    "helpLabel": "Please help me for compare hotel",
+    "findLabel": "Please help me for compare hotel",
+    "blogLabel": "Please help me for compare hotel",
     "opportunityLabel": "Check tour opportunities",
     "immediateHelpMessage": "Please call {{link}} to get immediate help"
   },
   "tourPage": {
     "headers": {
-      "title0": "Tours",
-      "title1": "Check our all tours",
+      "title0": "Hotels",
+      "title1": "Check our all hotels",
       "texSection2": "Millions of people give to charity on a regular basis to support causes they believe in, as well as for the positive effect it has on their own lives..",
       "button": "Donate"
     }
   },
   "tour": {
-    "header": "Tours"
+    "header": "Hotels"
   },
   "signIn": {
     "header": "Welcome Back!",
@@ -73,7 +65,7 @@
     "or": "Or"
   },
   "signUp": {
-    "header": "Welcome to Just Now",
+    "header": "Welcome to Seturn",
     "signUpWith": "Sign up with",
     "firstName": "First name",
     "lastName": "Last name",
@@ -128,8 +120,8 @@
     }
   },
   "aboutUsPage": {
-    "header": "Nobody knows you better than us!",
-    "bodyText": "We enable transit passengers, individual and corporate travelers to make reservations and plan unplanned travel days all-in-one through a single application according to their current location. by finding real last-minute tours and events to use their time more efficiently and providing transportation options with distance information."
+    "header": "Nobody offer the best price than us!",
+    "bodyText": "We are search engine for best price and best offer for hotels."
   },
   "ourSponsorsComp": {
     "card": {
