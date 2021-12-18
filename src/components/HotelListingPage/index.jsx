@@ -43,158 +43,90 @@ const HotelListingPage = () => {
 
 
   return <>
-search-card
+
     {loading ? (
+      <div> 
       <Spinner
-        style={{ marginBottom: 27 }}
+        style={{ marginBottom: '27', justifyContent:'space-evenly' }}
         animation="border"
         variant="danger"
+        size="xl"
       />
+      </div>
     ) :
       <Container fluid="md">
         <h1 style={{ margin: "2em 0" }} >Arama Sonuçlarınız</h1>
-        <Row>
           {Object.values(data).map(item => (
-            <Card className='search-card' style={{ marginBottom: "2em", }} sm={12}>
+            <Card className='search-card' style={{ marginBottom: "2em", justifyContent:"column"}}>
               {/* <Card.Header style={{ fontWeight:"bold", fontSize:"30px", backgroundColor:"#C7CEDB", color:"black"}}>{item.name[0]}</Card.Header> */}
-              <Card.Body className='search-card-body' style={{ display: "flex", justifyContent: "space-between" }}>
-                <Row>
+              <Card.Body className='search-card-body' style={{ display: "flex", justifyContent: "space-evenly" }}>
+                
                   <Col sm={3}>
-                    <Card.Img style={{ width: "100%", borderRadius: "10px" }} variant="left" src={item.image_url} />
+                    <Card.Img style={{ width: "350px", height: "80%", borderRadius: "10px" }} variant="left" src={item.image_url} />
                   </Col>
-                  <Col sm={4}>
-                    <Card.Body>
+                  
+                    <Card.Body style={{ marginBottom: "2em" }}>
+                    
                       <Card.Text>
-                        <h5>Ibis Amsterdan Centre</h5>
-                        <h6>Otel</h6>
-                        <hr />
-                        <p>Amsterdam Şehir Merkezi 1 km uzaklıkta</p>
-                        <hr />
+                      {Object.values(item['detail']).map(items => (
+                        <div className="bigTable">
+                          <div className='providerSection'>
+                        <h5 className='tittleofProvider'>{item.name[0]}</h5>
+                        <h6 className='tittleofProvider'>{item.city[0]}</h6>
+                        
                         <p>
-                          <span className='points'>7.8</span>
+                          <span className='points'> {items['rate']}</span>
                           İyi (100 değerlendirme)
+                          
                         </p>
+                        </div>
+                        <div className='priceSectionForProvider'>
+                      
+                                    <Card.Title style={{ fontSize: "100%", fontSize:"18px", color: 'rgb(10, 10, 87)'}} >{items['provider'] == 'bookingcom' ? <img className='providerLogo' src="https://www.haberodak.com/wp-content/uploads/2020/10/screen-shot-2017-10-24-at-9-54-22-am.png" alt="booking.comL Logo"/> 
+                                    : <img  className='providerLogo' src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Hotels.com_logo.svg/1280px-Hotels.com_logo.svg.png" alt="hotelscomlogo"/>
+                                    
+                                    } 
+                                    
+                                    {items['repeat']} </Card.Title>
+                                    {/* <Card.Title className='best-price-text'> {items['provider']}{items['repeat']} : {items['total_price']} </Card.Title> */}
+                                    <a rel="noopener noreferrer" href={items['url']} target="_blank">
+                                   
+                                    {items['best'] ? 
+                                    <Button style={{ width:"100%"}} className='best-price-provider' onClick={handleClick} variant="success"> Best Price {items['provider']} : {items['total_price']} €  </Button>  : 
+                                    <Button style={{ width:"100%"}} className='best-price-text' onClick={handleClick} variant="success">  {items['provider']} :  {items['total_price']} € </Button>
+                                
+                                  }
+
+                                    
+                            </a>
+
+                            </div>           
+                                  
+                        </div>
+                         ))}
                       </Card.Text>
-                    </Card.Body>
-                  </Col>
-                  <Col sm={5} style={{ display: "flex", justifyContent: "space-between" }}>
+                    </Card.Body >
+              
+                  {/* <Col sm={5} style={{ display: "flex", justifyContent: "space-between" }}>
                     {Object.values(item['detail']).map(items => (
                       items['best'] ?
-                        (<Card className="bestPriceSection" style={{ width: "40em", height: "auto", marginBottom: "2em", display: 'flex', justifyContent: "space-evenly" }}>
+                        (<Card className="bestPriceSection" style={{ width: "40em", height: "auto", marginBottom: "2em", display: 'flex', justifyContent: "space-evenly" , border:"1px solid red" }}>
                           {items['repeat'] ? (<Card.Header as="h5"><Card.Title style={{ color: "black", fontWeight: "bold", fontSize: "30px" }}> Daha once ilgilendiniz   </Card.Title></Card.Header>) : ''}
                           <Card.Header as="h5"><Card.Title className="best-price-title" style={{ color: "black", fontWeight: "bold", fontSize: "30px" }}> {item.name[0]}   <Card.Img style={{ width: '90px', height: '90px', borderRadius: '100%' }} variant="left" src="https://i.pinimg.com/originals/30/ff/07/30ff070d7ac4da9ddf850889d02a3930.jpg" /></Card.Title></Card.Header>
-                          <Row>
-                            <Card.Body className='best-price-card-body'>
-                              <Card.Text >
-                                {items['repeat'] ? (<Card.Header as="h5"><Card.Title style={{ color: "black", fontWeight: "bold", fontSize: "30px" }}> Daha once ilgilendiniz   </Card.Title></Card.Header>) : ''}
-                                <Row>
-                                  <Col>
-                                    <Card.Title style={{ fontSize: "15px" }} >  {items['provider']}{items['repeat']} </Card.Title>
-                                    <Card.Title className='best-price-text'> En İyi Fiyat: {items['total_price']} </Card.Title>
-                                  </Col>
-                                  <Col>
-                                    <Card.Title style={{ fontSize: "15px" }} >  {items['provider']}{items['repeat']} </Card.Title>
-                                    <Card.Title className='best-price-text'> En İyi Fiyat: {items['total_price']} </Card.Title>
-                                  </Col>
-                                </Row>
-                                {/* <Card.Title style={{ fontSize: "15px" }} > Puan: {items['rate']} </Card.Title> */}
-                              </Card.Text>
-                              <Col >
-                                <a rel="noopener noreferrer" href={items['url']} target="_blank">
-                                  <Button style={{ backgroundColor: "#E63946", width: '30%', height: 'auto' }} onClick={handleClick} variant="success">Oda Seç</Button>
-                                </a>
-                              </Col>
-                            </Card.Body>
-                          </Row>
+                          
                         </Card>) :
                         (<Card className="secondPriceSection" style={{ width: "20em", marginLeft: "2em" }}>
-                          <Card.Header style={{ backgroundColor: "#EDF7F6" }} as="h5">
-                            <Card.Title style={{ color: "white", color: "black" }}>{items['provider']}</Card.Title>
-                          </Card.Header>
-                          <Card.Body>
-                            <Card.Text>
-                              Fiyat : {items['total_price']} €
-                            </Card.Text>
-                            <a rel="noopener noreferrer" href={items['url']} target="_blank">
-                              <Button variant="success">Oda Seç</Button>
-                            </a>
-                          </Card.Body>
+                         
                         </Card>)
                     ))}
-                  </Col>
-                </Row>
+                  </Col> */}
+               
               </Card.Body>
             </Card>
           ))}
-        </Row>
+  
       </Container>
     }
-
-{loading ? (
-            <Spinner
-              style={{ marginBottom: 27 }}
-              animation="border"
-              variant="danger"
-            />
-          ) : 
-<Container fluid="md">
-  <h1 style={{ margin:"2em 0"}} >Arama Sonuçlarınız</h1>
-  {Object.values(data).map(item => (
-    
-  <Card style={{ marginBottom:"2em", }} > 
-  
-  {/* <Card.Header style={{ fontWeight:"bold", fontSize:"30px", backgroundColor:"#C7CEDB", color:"black"}}>{item.name[0]}</Card.Header> */}
-  <Card.Body  style={{ display: "flex", justifyContent:"space-between" }}>
-  <Row >
-    <Col>
-  <Card.Img style={{ width: '20em', height: '20em', marginRight:"2em"}} variant="left" src={item.image_url} />
-  </Col>
-    </Row>
-    <Row style={{ display:"flex", justifyContent:"space-between"}}>
-  {Object.values(item['detail']).map(items => (
-    
-    items['best'] ? 
-    (<Card className="bestPriceSection" style={{ width: "40em", height:"18em", backgroundColor:"white", marginBottom:"2em", display:'flex', justifyContent:"space-evenly" }}>
-       {items['repeat'] ? (<Card.Header  as="h5"><Card.Title style={{color:"black",fontWeight:"bold", fontSize:"30px" }}> Daha once ilgilendiniz   </Card.Title></Card.Header>) : ''}
-       <Card.Header  as="h5"><Card.Title style={{color:"black",fontWeight:"bold", fontSize:"30px" }}> { (Array.isArray(item.name) && item.name.length) ? item.name[1] : item.name }   <Card.Img style={{ width: '70px', height: '80px', borderRadius:'50%' }} variant="left" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStU_bjuwqndQdmCGwSWEVHi5JPGZ3-C3Zd5XdITR8vq_ajnV_mfMrHHOrqfYtQOt9Lcn0&usqp=CAU" /></Card.Title></Card.Header>
-    <Row>
-    <Card.Body  >
-      <Card.Text >
-      {items['repeat'] ? (<Card.Header  as="h5"><Card.Title style={{color:"black",fontWeight:"bold", fontSize:"30px" }}> Daha once ilgilendiniz   </Card.Title></Card.Header>) : ''}
-      <Card.Title style={{ fontSize: "15px"}} >  {items['provider']}{items['repeat'] } </Card.Title> 
-      <Card.Title style={{ fontSize: "15px"}} > En İyi Fiyat: {items['total_price']} </Card.Title>  
-      <Card.Title style={{ fontSize: "15px"}} > Puan: {items['rate']} </Card.Title> 
-      </Card.Text>
-
-      <Col >
-      <a rel="noopener noreferrer" href={items['url']} target="_blank">
-      <Button style={{ backgroundColor: "green", width: '30%', height: 'auto'}} onClick={handleClick} variant="success">Oda Seç</Button>
-      </a>
-      </Col>
-    </Card.Body>
-    </Row>
-  </Card> ):
-    (<Card className="secondPriceSection" style={{ width: "30em", marginLeft:"2em"}}>
-   <Card.Header style={{ backgroundColor:"#EDF7F6"}} as="h5">
-    <Card.Title  style={{ color:"white", color:"black"}}>{items['provider']}</Card.Title>  
-  </Card.Header>
-  <Card.Body>
-    <Card.Text>
-     Fiyat : {items['total_price']} €
-    </Card.Text>
-    <a rel="noopener noreferrer" href={items['url']} target="_blank">
-            <Button  variant="success">Oda Seç</Button>
-    </a>
-  </Card.Body>
- 
-  </Card>)
-  ))}
-</Row>
-  </Card.Body>
-</Card>
-  ))}
-</Container>
-}
   </>
 
 }
