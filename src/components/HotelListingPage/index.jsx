@@ -52,10 +52,11 @@ const HotelListingPage = () => {
         variant="danger"
         size="xl"
       />
+      Yükleniyor...
       </div>
     ) :
       <Container fluid="md">
-        <h1 style={{ margin: "2em 0" }} >Arama Sonuçlarınız</h1>
+        <a  style={{ margin: "2em 0", padding: "1em", fontSize:"20px", borderRadius:"10em" }} href="#" class="badge badge-secondary">{location.state.params.search } Check-in:{location.state.params.checkIn} Check-out: {location.state.params.checkOut } Adult: {location.state.params.adult} </a>
           {Object.values(data).map(item => (
             <Card className='search-card' style={{ marginBottom: "2em", justifyContent:"column"}}>
               {/* <Card.Header style={{ fontWeight:"bold", fontSize:"30px", backgroundColor:"#C7CEDB", color:"black"}}>{item.name[0]}</Card.Header> */}
@@ -79,6 +80,7 @@ const HotelListingPage = () => {
                           İyi (100 değerlendirme)
                           
                         </p>
+                        <p>Standart Oda</p>
                         </div>
                         <div className='priceSectionForProvider'>
                       
