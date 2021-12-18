@@ -6,7 +6,8 @@ import { useState, useEffect } from 'react';
 import "./index.scss";
 import { useHistory, Link } from "react-router-dom";
 import Spinner from 'react-bootstrap/Spinner'
-import axios from 'axios';
+import Review from '../Review'
+
 
 
 const HotelListingPage = () => {
@@ -28,7 +29,6 @@ const HotelListingPage = () => {
   // + adding the use
   useEffect(() => {
 
-
     async function getData() {
       const response = await fetch("https://seturn-api.herokuapp.com/api/location?location=" + location.state.params.search + "&checkIn=" + location.state.params.checkIn + "&checkOut=" + location.state.params.checkOut + "&adult=" + location.state.params.adult);
       const data = await response.json();
@@ -37,10 +37,7 @@ const HotelListingPage = () => {
       setLoading(false);
     }
     getData();
-  }, []);
-
-
-
+  },[]);
 
   return <>
 
@@ -98,14 +95,16 @@ const HotelListingPage = () => {
                                     <Button style={{ width:"100%"}} className='best-price-text' onClick={handleClick} variant="success"> {items['total_price']} € </Button>
                                 
                                   }
-
-                                    
                             </a>
-
-                            </div>           
-                                  
+                            </div>              
                         </div>
                          ))}
+                       <div className="bigTable">
+                       <Card.Title style={{ fontSize: "100%", fontSize:"13px"}}>
+                       <Review booking={item['locationId']['bookingcom']}/>
+                       </Card.Title >
+                        {/* {item['locationId']['bookingcom'] ? setBookingId(item['locationId']['bookingcom']): null} */}
+                      </div>  
                       </Card.Text>
                     </Card.Body >
               
