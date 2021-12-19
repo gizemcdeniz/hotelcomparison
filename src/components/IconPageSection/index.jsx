@@ -1,6 +1,5 @@
 import React from "react";
-import { Container, Col, Row, Button } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Container, Col, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import search2 from "../../images/bestdeals.webp";
 import book from "../../images/book.png";
@@ -8,7 +7,6 @@ import enjoy from "../../images/enjoy.jpg";
 import "./index.scss";
 
 const IconPageSection = () => {
-  const { t } = useTranslation();
 
   return (
     <div className="logoIntro">

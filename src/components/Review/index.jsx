@@ -1,9 +1,6 @@
 import React from 'react';
-import { Container, Accordion } from "react-bootstrap";
-
-import { useLocation } from 'react-router-dom';
+import { Container } from "react-bootstrap";
 import { useState, useEffect } from 'react';
-import { useHistory, Link } from "react-router-dom";
 import Spinner from 'react-bootstrap/Spinner'
 
 

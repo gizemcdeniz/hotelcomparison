@@ -7,11 +7,9 @@ import {
   Dropdown
 } from "react-bootstrap";
 import "./index.scss";
-import logo from "../../images/logo1.png";
 import { useTranslation } from "react-i18next";
 import languageIcon from "../../images/icons/language.svg";
-import { AuthContext } from "../../auth/Authentication";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import SignInUpButtons from "./SignInUpButtons";
 
 
@@ -27,7 +25,7 @@ const LANG_SPECS = [
 ];
 
 const MainNavbar = () => {
-  const currentUser = React.useContext(AuthContext);
+
 
   const [t, i18n] = useTranslation();
 
