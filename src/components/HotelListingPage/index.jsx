@@ -1,10 +1,10 @@
 import React from 'react';
-import { Card, Button, Container, CardGroup, Row, Col } from "react-bootstrap";
+import { Card, Button, Container, Col } from "react-bootstrap";
 
 import { useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import "./index.scss";
-import { useHistory, Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import Spinner from 'react-bootstrap/Spinner'
 import Review from '../Review'
 
@@ -81,11 +81,11 @@ const HotelListingPage = () => {
                         </div>
                         <div className='priceSectionForProvider'>
                       
-                        <Card.Title style={{ fontSize: "100%", fontSize:"18px", color: 'rgb(10, 10, 87)'}} >{items['provider'] == 'bookingcom' ? <img className='providerLogo' src="https://www.haberodak.com/wp-content/uploads/2020/10/screen-shot-2017-10-24-at-9-54-22-am.png" alt="booking.com Logo"/> 
+                        <Card.Title style={{ fontSize: "100%", fontSize:"18px", color: 'rgb(10, 10, 87)'}} >{items['provider'] === 'bookingcom' ? <img className='providerLogo' src="https://www.haberodak.com/wp-content/uploads/2020/10/screen-shot-2017-10-24-at-9-54-22-am.png" alt="booking.com Logo"/> 
                                     : ''} </Card.Title>
-                                    <Card.Title style={{ fontSize: "100%", fontSize:"18px", color: 'rgb(10, 10, 87)'}} >{items['provider'] == 'hotelscom' ? <img className='providerLogo' src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Hotels.com_logo.svg/1280px-Hotels.com_logo.svg.png" alt="hotels.com Logo"/> 
+                                    <Card.Title style={{ fontSize: "100%", fontSize:"18px", color: 'rgb(10, 10, 87)'}} >{items['provider'] === 'hotelscom' ? <img className='providerLogo' src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/Hotels.com_logo.svg/1280px-Hotels.com_logo.svg.png" alt="hotels.com Logo"/> 
                                     : ''}    </Card.Title>                                 
-                                    <Card.Title style={{ fontSize: "100%", fontSize:"18px", color: 'rgb(10, 10, 87)'}} >{items['provider'] == 'setur' ? <img className='providerLogo' src="http://www.alanyatatil.net/wp-content/uploads/2009/07/setur.jpg" alt="setur Logo"/> 
+                                    <Card.Title style={{ fontSize: "100%", fontSize:"18px", color: 'rgb(10, 10, 87)'}} >{items['provider'] === 'setur' ? <img className='providerLogo' src="http://www.alanyatatil.net/wp-content/uploads/2009/07/setur.jpg" alt="setur Logo"/> 
                                     : ''} </Card.Title>
                                     {/* <Card.Title className='best-price-text'> {items['provider']}{items['repeat']} : {items['total_price']} </Card.Title> */}
                                     <a rel="noopener noreferrer" href={items['url']} target="_blank">

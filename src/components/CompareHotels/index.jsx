@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Button, Container, Row, ListGroup, ListGroupItem} from "react-bootstrap";
+import { Card, Button, Container, Row, ListGroup} from "react-bootstrap";
 import { useState, useEffect } from 'react';
 import "./index.scss";
 
